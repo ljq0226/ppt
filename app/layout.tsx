@@ -1,5 +1,5 @@
-import './globals.css'
 import type { Metadata } from 'next'
+import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Create Your PPT',
@@ -13,7 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className='flex flex-col h-screen w-screen overflow-hidden'>
+        {children}
+      </body>
     </html>
   )
 }
